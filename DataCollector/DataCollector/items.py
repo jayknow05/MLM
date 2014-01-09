@@ -8,6 +8,7 @@ from scrapy.item import Item, Field
 class PlayerItem(Item):
     name = Field()
     position = Field()
-    salary = Field()
-    average = Field()
+    salary = Field(default=99999)
+    projection = Field()
+    gradient = Field()
     pass
